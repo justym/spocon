@@ -46,7 +46,7 @@ spocon [sub cmds]
 - This cli-app use spotify web api. So, please check their web page carefully.
 - Spotify Premium user can connect to Spotiy Web API through Authorization code flow (OAuth2.0).
 - Spotify Web API restrict user access limit (60 tiems / per an hour) 
-- This cli-app use this package [github.com/nmrshll/oauth2-noserver](https://github.com/nmrshll/oauth2-noserver)to authenticate rapidly. So please see this package carefully too.
+- This cli-app use this package [github.com/nmrshll/oauth2-noserver](https://github.com/nmrshll/oauth2-noserver) to do authentication rapidly. So please see this package carefully too.
 
 # Finally
 :dizzy: Pull Request welcome :dizzy:
