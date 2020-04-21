@@ -2,6 +2,7 @@ package player
 
 import (
 	"net/http"
+	"strconv"
 
 	"golang.org/x/exp/errors"
 )
@@ -23,7 +24,7 @@ func Next(client *http.Client) error {
 	}
 
 	if resp.StatusCode != nextSuccessCode {
-		return errors.New("Invalid status code: " + string(resp.StatusCode))
+		return errors.New("Invalid status code: " + strconv.Itoa(resp.StatusCode))
 	}
 
 	return nil

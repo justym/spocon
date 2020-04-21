@@ -3,6 +3,7 @@ package player
 import (
 	"errors"
 	"net/http"
+	"strconv"
 )
 
 const (
@@ -22,7 +23,7 @@ func Previous(client *http.Client) error {
 	}
 
 	if resp.StatusCode != prevSuccessCode {
-		return errors.New("Invalid status code: " + string(resp.StatusCode))
+		return errors.New("Invalid status code: " + strconv.Itoa(resp.StatusCode))
 	}
 
 	return nil
