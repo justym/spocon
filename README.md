@@ -1,7 +1,7 @@
 # spocon
 Dead simply spotify cli controller
 
- Why 
+# Why 
 I just wanted to controll playback from cli
 
 # Setup 
@@ -49,6 +49,6 @@ spocon [sub cmds]
 - This cli-app use this package [github.com/nmrshll/oauth2-noserver](https://github.com/nmrshll/oauth2-noserver)to authenticate rapidly. So please see this package carefully too.
 
 # Finally
-Pull Request welcome :dizzy:
+:dizzy: Pull Request welcome :dizzy:
 Code review welcome :dizzy:
 Issue welcome :dizzy:
