@@ -43,7 +43,7 @@ spocon [sub cmds]
 - github.com/nmrshll/oauth2-noserver
 
 # Caution
-- This cli-app use spotify web api. So, please check their web page carefully.
+- This cli-app use spotify web api. So, please check their [web page](https://developer.spotify.com/documentation/web-api/) carefully.
 - This app uses that Web API through Authorization code flow (OAuth2.0).
 - This cli-app uses this package [github.com/nmrshll/oauth2-noserver](https://github.com/nmrshll/oauth2-noserver) to do authentication rapidly. So please see this package carefully too.
 
