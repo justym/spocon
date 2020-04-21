@@ -11,12 +11,12 @@ var rootCmd = &cobra.Command{
 }
 
 func cmdInit() error {
-	rootCmd.AddCommand(AuthCmd,NextCmd,PauseCmd,PrevCmd,StatusCmd,)
+	rootCmd.AddCommand(AuthCmd, NextCmd, PauseCmd, PrevCmd, StartCmd, StatusCmd)
 	return nil
 }
 
 //Execute execute spocon commands
-func Execute(){
+func Execute() {
 	if err := cmdInit(); err != nil {
 		log.Fatalln(err)
 	}
@@ -24,9 +24,3 @@ func Execute(){
 		log.Fatalln(err)
 	}
 }
-
-	
-
-
-
-

@@ -11,6 +11,7 @@ var config *oauth2.Config
 
 const redirectURL = "http://127.0.0.1:14565/oauth/callback"
 const scopeUMPS = "user-modify-playback-state"
+const scopeURCP = "user-read-currently-playing"
 
 //NewConfig return singleton state imformation for OAuth2.0 configurations.
 func NewConfig() *oauth2.Config {
@@ -28,7 +29,7 @@ func NewConfig() *oauth2.Config {
 		ClientID:     id,
 		ClientSecret: key,
 		Endpoint:     spotify.Endpoint,
-		Scopes:       []string{scopeUMPS},
+		Scopes:       []string{scopeUMPS, scopeURCP},
 	}
 
 	return config

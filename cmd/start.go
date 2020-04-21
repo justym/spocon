@@ -4,6 +4,7 @@ import (
 	"log"
 
 	"github.com/justym/spocon/pkg"
+	"github.com/justym/spocon/player"
 	"github.com/spf13/cobra"
 )
 
@@ -14,11 +15,14 @@ var StartCmd = &cobra.Command{
 	Run:   start,
 }
 
-//TODO
 func start(cmd *cobra.Command, args []string) {
 	conf := pkg.NewConfig()
-	_, err := pkg.NewClient(conf)
+	result, err := pkg.NewClient(conf)
 	if err != nil {
+		log.Fatalln(err)
+	}
+
+	if err := player.Start(result.Client); err != nil {
 		log.Fatalln(err)
 	}
 }
