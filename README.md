@@ -22,7 +22,7 @@ go build
 
 or 
 
-Please run ```git clone [this repo]```. And you can use this app from ./bin/spocon
+Please run ```git clone [this repo]```. After that, you can use this app from ./bin/spocon
 
 If you are in a trouble, please see caution part in this README
 
