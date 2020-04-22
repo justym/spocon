@@ -48,6 +48,9 @@ spocon [sub cmds]
 - This cli-app uses this package [github.com/nmrshll/oauth2-noserver](https://github.com/nmrshll/oauth2-noserver) to do authentication rapidly. So please see this package carefully too.
 
 # Finally
-:dizzy: Pull Request welcome :dizzy:
-Code review welcome :dizzy:
-Issue welcome :dizzy:
+Welcome ...
+- Code review :dizzy:
+- Issue :dizzy:
+- Pull Request:dizzy:
+
+
