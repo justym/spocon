@@ -7,15 +7,24 @@ I just wanted to controll playback from cli
 # Setup 
 1. Please go to [here](https://developer.spotify.com/dashboard/) to create Client ID and Client Secret 
 2. Please set redirect uri to http://127.0.0.1:14565/oauth/callback 
-2. Please set the values into ``` .env ``` file
-3. Please run the commands below
+3. Please set these values like below.
+```
+export SPOTIFY_ID=your_client_id
+export SPOTIFY_KEY=your_client_key
+```
+4. Please run the commands below
 
 ```
 go get github.com/justym/spocon
 cd $GOPATH/src/github.com/justym/spocon
 go build
 ```
-If you are in a trouble, please watch caution part
+
+or 
+
+Please run ```git clone [this repo]```. And you can use this app from ./bin/spocon
+
+If you are in a trouble, please see caution part in this README
 
 # Usage
 ```
