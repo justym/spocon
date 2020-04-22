@@ -52,8 +52,7 @@ spocon [sub cmds]
 - This app uses that Web API through Authorization code flow (OAuth2.0).
 - This cli-app uses this package [github.com/nmrshll/oauth2-noserver](https://github.com/nmrshll/oauth2-noserver) to do authentication rapidly. So please see this package carefully too.
 
-# Finally
-Welcome ...
+# Welcome 
 - Code review 
 - Issue 
 - Pull Request
