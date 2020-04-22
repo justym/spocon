@@ -47,7 +47,7 @@ spocon [sub cmds]
 - help
   - help command can see short help message 
 
-# Thanksfull Package used 
+# Built with
 - github.com/spf13/cobra
 - github.com/nmrshll/oauth2-noserver
 
