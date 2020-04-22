@@ -58,8 +58,8 @@ spocon [sub cmds]
 
 # Finally
 Welcome ...
-- Code review :dizzy:
-- Issue :dizzy:
-- Pull Request:dizzy:
+- Code review 
+- Issue 
+- Pull Request
 
 
