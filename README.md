@@ -15,14 +15,10 @@ export SPOTIFY_KEY=your_client_key
 4. Please run the commands below
 
 ```
-go get github.com/justym/spocon
+go get -u github.com/justym/spocon
 cd $GOPATH/src/github.com/justym/spocon
 go build
 ```
-
-or 
-
-Please run ```git clone [this repo]```. After that, you can use this app from ./bin/spocon
 
 If you are in a trouble, please see caution part in this README
 
