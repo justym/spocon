@@ -23,6 +23,8 @@ func Start(client *http.Client) error {
 		return err
 	}
 
+	// エラー処理それだけでまとめてあげてそれを最後に呼び出すようにするといいかも！
+	// どんなエラーがあるのかとか、想定されているのかが一眼でわかるから！
 	if resp.StatusCode != startSuccessCode {
 		return errors.New("Invalid Status Code: " + strconv.Itoa(resp.StatusCode))
 	}

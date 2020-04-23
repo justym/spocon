@@ -9,6 +9,8 @@ var (
 	clientSecret string
 )
 
+// これでもいいんだけど、init関数で読んであげれば、最初に呼ばれるからそっちのが良さそうかな
+//　二つならまだいいけど、もしこれ以上増えるならgithub.com/kelseyhightower/envconfigを使うことを考えるといいかも！
 //LoadEnv loads value from .env file
 func LoadEnv() {
 	clientID = os.Getenv("SPOTIFY_ID")
