@@ -67,7 +67,7 @@ func Previous(client *http.Client) error {
 //}
 //
 //func (p *playerClient) Previous() error {
-//	req, err := http.NewRequest(http.MethodPost, prevEndpoint, nil)
+//	req, err := http.NewRequest(http.MethodPost, p.Endpoint+"/previous", nil)
 //	if err != nil {
 //		return err
 //	}
