@@ -1,9 +1,8 @@
 package pkg
 
 import (
+	"fmt"
 	"os"
-
-	"golang.org/x/exp/errors/fmt"
 )
 
 var (
