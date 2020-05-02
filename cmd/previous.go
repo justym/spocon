@@ -15,7 +15,7 @@ var PrevCmd = &cobra.Command{
 	Run:   previous,
 }
 
-func previous(cmd *cobra.Command, args []string) {
+func previous(_ *cobra.Command, _ []string) {
 	conf := pkg.NewConfig()
 	result, err := pkg.NewClient(conf)
 	if err != nil {

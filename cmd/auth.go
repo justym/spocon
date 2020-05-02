@@ -14,7 +14,7 @@ var AuthCmd = &cobra.Command{
 	Run:   authenticate,
 }
 
-func authenticate(cmd *cobra.Command, args []string) {
+func authenticate(_ *cobra.Command, _ []string) {
 	conf := pkg.NewConfig()
 	_, err := pkg.NewClient(conf)
 	if err != nil {

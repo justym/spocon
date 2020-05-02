@@ -14,7 +14,7 @@ var StatusCmd = &cobra.Command{
 	Run:   status,
 }
 
-func status(cmd *cobra.Command, args []string) {
+func status(_ *cobra.Command, _ []string) {
 	conf := pkg.NewConfig()
 	result, err := pkg.NewClient(conf)
 	if err != nil {

@@ -15,7 +15,7 @@ var StartCmd = &cobra.Command{
 	Run:   start,
 }
 
-func start(cmd *cobra.Command, args []string) {
+func start(_ *cobra.Command, _ []string) {
 	conf := pkg.NewConfig()
 	result, err := pkg.NewClient(conf)
 	if err != nil {

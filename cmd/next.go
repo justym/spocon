@@ -15,7 +15,7 @@ var NextCmd = &cobra.Command{
 	Run:   next,
 }
 
-func next(cmd *cobra.Command, args []string) {
+func next(_ *cobra.Command, _ []string) {
 	conf := pkg.NewConfig()
 	result, err := pkg.NewClient(conf)
 	if err != nil {

@@ -15,7 +15,7 @@ var PauseCmd = &cobra.Command{
 	Run:   pause,
 }
 
-func pause(cmd *cobra.Command, args []string) {
+func pause(_ *cobra.Command, _ []string) {
 	conf := pkg.NewConfig()
 	result, err := pkg.NewClient(conf)
 	if err != nil {
