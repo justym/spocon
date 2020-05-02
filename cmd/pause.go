@@ -11,7 +11,7 @@ import (
 //PauseCmd is command for pause playback
 var PauseCmd = &cobra.Command{
 	Use:   "pause",
-	Short: "pause command pauses current playback",
+	Short: "pause current playback",
 	Run:   pause,
 }
 

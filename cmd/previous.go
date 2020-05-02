@@ -11,7 +11,7 @@ import (
 //PrevCmd is command for pagin previous playback
 var PrevCmd = &cobra.Command{
 	Use:   "prev",
-	Short: "prev command go to previous palyback",
+	Short: "play the previous song",
 	Run:   previous,
 }
 

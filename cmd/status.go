@@ -10,7 +10,7 @@ import (
 
 var StatusCmd = &cobra.Command{
 	Use:   "status",
-	Short: "status command get current playback status ",
+	Short: "get current playback status ",
 	Run:   status,
 }
 

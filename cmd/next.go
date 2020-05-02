@@ -11,7 +11,7 @@ import (
 //NextCmd is command for next playback
 var NextCmd = &cobra.Command{
 	Use:   "next",
-	Short: "next command makes lisetenning next playback",
+	Short: "play the next song",
 	Run:   next,
 }
 

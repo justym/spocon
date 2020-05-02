@@ -10,7 +10,7 @@ import (
 //AuthCmd is command for authentication
 var AuthCmd = &cobra.Command{
 	Use:   "auth",
-	Short: "auth command do authenticating to spotify",
+	Short: "authenticate to spotify",
 	Run:   authenticate,
 }
 

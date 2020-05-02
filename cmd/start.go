@@ -11,7 +11,7 @@ import (
 //StartCmd is command to start playback
 var StartCmd = &cobra.Command{
 	Use:   "start",
-	Short: "start command start/resume playback",
+	Short: "start/resume playback",
 	Run:   start,
 }
 
