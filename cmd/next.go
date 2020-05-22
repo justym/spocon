@@ -11,11 +11,11 @@ import (
 //NextCmd is command for next playback
 var NextCmd = &cobra.Command{
 	Use:   "next",
-	Short: "next command makes lisetenning next playback",
+	Short: "play the next song",
 	Run:   next,
 }
 
-func next(cmd *cobra.Command, args []string) {
+func next(_ *cobra.Command, _ []string) {
 	conf := pkg.NewConfig()
 	result, err := pkg.NewClient(conf)
 	if err != nil {

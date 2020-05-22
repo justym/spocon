@@ -11,11 +11,11 @@ import (
 //PrevCmd is command for pagin previous playback
 var PrevCmd = &cobra.Command{
 	Use:   "prev",
-	Short: "prev command go to previous palyback",
+	Short: "play the previous song",
 	Run:   previous,
 }
 
-func previous(cmd *cobra.Command, args []string) {
+func previous(_ *cobra.Command, _ []string) {
 	conf := pkg.NewConfig()
 	result, err := pkg.NewClient(conf)
 	if err != nil {

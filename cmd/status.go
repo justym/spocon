@@ -10,11 +10,11 @@ import (
 
 var StatusCmd = &cobra.Command{
 	Use:   "status",
-	Short: "status command get current playback status ",
+	Short: "get current playback status ",
 	Run:   status,
 }
 
-func status(cmd *cobra.Command, args []string) {
+func status(_ *cobra.Command, _ []string) {
 	conf := pkg.NewConfig()
 	result, err := pkg.NewClient(conf)
 	if err != nil {

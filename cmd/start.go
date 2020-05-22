@@ -11,11 +11,11 @@ import (
 //StartCmd is command to start playback
 var StartCmd = &cobra.Command{
 	Use:   "start",
-	Short: "start command start/resume playback",
+	Short: "start/resume playback",
 	Run:   start,
 }
 
-func start(cmd *cobra.Command, args []string) {
+func start(_ *cobra.Command, _ []string) {
 	conf := pkg.NewConfig()
 	result, err := pkg.NewClient(conf)
 	if err != nil {

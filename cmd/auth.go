@@ -10,11 +10,11 @@ import (
 //AuthCmd is command for authentication
 var AuthCmd = &cobra.Command{
 	Use:   "auth",
-	Short: "auth command do authenticating to spotify",
+	Short: "authenticate to spotify",
 	Run:   authenticate,
 }
 
-func authenticate(cmd *cobra.Command, args []string) {
+func authenticate(_ *cobra.Command, _ []string) {
 	conf := pkg.NewConfig()
 	_, err := pkg.NewClient(conf)
 	if err != nil {

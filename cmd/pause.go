@@ -11,11 +11,11 @@ import (
 //PauseCmd is command for pause playback
 var PauseCmd = &cobra.Command{
 	Use:   "pause",
-	Short: "pause command pauses current playback",
+	Short: "pause current playback",
 	Run:   pause,
 }
 
-func pause(cmd *cobra.Command, args []string) {
+func pause(_ *cobra.Command, _ []string) {
 	conf := pkg.NewConfig()
 	result, err := pkg.NewClient(conf)
 	if err != nil {

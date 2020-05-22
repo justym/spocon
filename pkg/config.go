@@ -7,25 +7,20 @@ import (
 	"golang.org/x/oauth2/spotify"
 )
 
-var config *oauth2.Config
-
-const redirectURL = "http://127.0.0.1:14565/oauth/callback"
-const scopeUMPS = "user-modify-playback-state"
-const scopeURCP = "user-read-currently-playing"
+const (
+	redirectURL = "http://127.0.0.1:14565/oauth/callback"
+	scopeUMPS   = "user-modify-playback-state"
+	scopeURCP   = "user-read-currently-playing"
+)
 
 //NewConfig return singleton state imformation for OAuth2.0 configurations.
 func NewConfig() *oauth2.Config {
-	if config != nil {
-		return config
+	id, key, err := GetValues()
+	if err != nil {
+		log.Fatal(err)
 	}
 
-	LoadEnv()
-	id, key := GetValues()
-	if id == "" || key == "" {
-		log.Fatalln("id or key is none")
-	}
-
-	config = &oauth2.Config{
+	config := &oauth2.Config{
 		ClientID:     id,
 		ClientSecret: key,
 		Endpoint:     spotify.Endpoint,
